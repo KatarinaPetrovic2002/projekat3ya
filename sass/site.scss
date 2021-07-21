@@ -1,0 +1,575 @@
+
+$color1: #C01717;
+$transition-time: 0.9s;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+    
+    hr {
+        height: 2px;
+        background-color: black;
+        width: 90%;
+    }
+
+    @media (min-width: 1050px) {
+        .podnozje-mali {
+            display: none;
+        }
+        header {
+            border-bottom: 3px solid black;
+            background-color: #ececec;
+            .header-mali {
+                display: none;
+            }
+            display: flex;
+            justify-content: space-between;
+            padding: 2% 3%;
+            font-size: 1.7em;
+            font-weight: bold;
+            .desna-strana-veliki {
+                color: $color1;
+            }
+            .leva-strana-veliki {
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+        section.statistika {
+            .grafik1-mali, .grafik2-mali, .prva-poruka-mali, .autor-prve-poruke-mali, .grafik3-mali, .grafik4-mali, .statistika-slike-mali {
+                display: none;
+            }
+            
+            .naslov-mali {
+                display: none;
+            }
+            .naslov-veliki {
+                padding: 3% 5%;
+                text-align: center;
+                font-size: 3em;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+               
+            }
+            .grafik1-veliki {
+                display: flex;
+                flex-direction: row-reverse;
+                margin: auto;
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: 400;
+                margin-bottom: 2%;
+                img {
+                    width: 65%;
+                    padding: 2%;
+                    filter: brightness(93%);
+                    transition: $transition-time;
+                    &:hover {
+                        filter: brightness(100%);
+                        transition: $transition-time;
+                    }
+                }
+                p {
+                    padding: 3%;
+                }
+            }
+            
+            .grafik2-veliki {
+                display: flex;
+                flex-direction: row-reverse;
+                margin: auto;
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: 400;
+                margin-bottom: 2%;
+                img {
+                    width: 55%;
+                    padding: 2%;
+                    filter: brightness(93%);
+                    transition: $transition-time;
+                    &:hover {
+                        filter: brightness(100%);
+                        transition: $transition-time;
+                    }
+                }
+                p {
+                    padding: 5% 3%;
+                }
+            }
+            .prva-poruka-veliki {
+                font-weight: bold;
+                font-size: 1.5em;
+                margin-left: 5.5%;
+               
+                .poruka {
+                    background-color: $color1;
+                    width: 51%;
+                    padding: 2%;
+                    margin-left: -3.5%;
+                    margin-top: 1.7%;
+                    font-size: 1.5em;
+                    color:#ececec;
+                    border-radius: 0.5em;
+                }
+            }
+            .autor-prve-poruke-veliki {
+                padding: 0 2.5%;
+                
+            }
+            .grafik3-veliki {
+                width: 100%;
+                .slike {
+                    width: 100%;
+                    display: flex;
+                    img {
+                        box-sizing: border-box;
+                        width: 50%;
+                        padding: 3% 4%;
+                    }
+                }
+                .tekst {
+                    text-align: center;
+                    font-size: 1.2em;
+                }
+            }
+            .grafik4-veliki {
+                img {
+                    display: block;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            .statistika-slike-veliki {
+                display: flex;
+                justify-content: space-evenly;
+                
+                img {
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    filter: grayscale(100%);
+                    width: 33.3333333333333%;
+                    padding: 5% 1%;
+                    transition: $transition-time;
+                    &:hover {
+                        transition: $transition-time;
+                        filter: grayscale(0%);
+                        padding: 4% 0.3%;
+                    }
+                }
+            }
+            
+
+           
+        }
+        section.vremenska {
+            .naslov-mali, .deo1-mali, .deo2-mali, .deo3-mali, .deo4-mali, .deo5-mali, .deo6-mali, .vremenska-slike-mali {
+                display: none;
+            }
+            .naslov-veliki {
+                padding: 3% 5%;
+                text-align: center;
+                font-size: 3em;
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            .deo1-veliki, .deo4-veliki {
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                text-align: center;
+                font-size: 1.5em;
+                font-weight: 400;
+
+                img {
+                    margin-right: 10%;
+                    width: 36%;
+                    border-radius: 50%;
+                    border: 2px solid black;
+                    padding: 0;
+                    filter: brightness(83%);
+                    transition: $transition-time;
+                    &:hover {
+                        filter: brightness(100%);
+                        transition: $transition-time;
+                        width: 28%;
+                    }
+                }
+                p {
+                    padding: 10%;
+
+
+                }
+            }
+            .deo2-veliki, .deo6-veliki {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                margin: auto;
+                text-align: center;
+                font-size: 1.5em;
+                font-weight: 400;
+                margin-bottom: 2%;
+
+                img {
+                    margin-left: 10%;
+                    width: 28%;
+                    border-radius: 50%;
+                    border: 2px solid black;
+                    padding: 0;
+                    filter: brightness(83%);
+                    transition: $transition-time;
+                    &:hover {
+                        filter: brightness(100%);
+                        transition: $transition-time;
+                        width: 30%;
+                    }
+                }
+                p {
+                    padding: 10%;
+
+                }
+            }
+            .deo3-veliki, .deo5-veliki {
+                display: flex;
+                justify-content: space-evenly;
+                margin: auto;
+                text-align: center;
+                font-size: 1.5em;
+                font-weight: 400;
+       
+                img {
+                    margin: 0.3%;
+                    width: 25%;
+                    border-radius: 50%;
+                    border: 2px solid black;
+                    padding: 0;
+                    filter: brightness(83%);
+                    transition: $transition-time;
+                    &:hover {
+                        filter: brightness(100%);
+                        transition: $transition-time;
+                        width: 28%;
+                    }
+                }
+                p {
+                    padding: 0.1%;
+                    padding-top: 2%;
+
+
+                }
+            }
+            .vremenska-slike-veliki {
+                display: flex;
+                justify-content: space-evenly;
+                
+                img {
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    filter: grayscale(100%);
+                    width: 33.3333333333333%;
+                    padding: 5% 1%;
+                    transition: $transition-time;
+                    &:hover {
+                        transition: $transition-time;
+                        filter: grayscale(0%);
+                        padding: 4% 0.3%;
+                    }
+                }
+            }
+            
+            
+            
+            
+
+        }
+        .podnozje-veliki {
+            .informacija, .to-be-continued {
+                text-align: center;
+            }
+            .to-be-continued {
+                color: $color1;
+                font-size: 2em;
+                font-weight: 600;
+                margin-top: 2%;
+            }
+            .poslednja-linija {
+                display: flex;
+                justify-content: space-between;
+                padding: 2%;
+            }
+        }
+        
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width: 480px) {
+        .podnozje-veliki {
+            display: none;
+        }
+        header {
+            border-bottom: 3px solid black;
+            background-color: #ececec;
+            .desna-strana-veliki, .leva-strana-veliki {
+                display: none;
+            }
+            .header-mali {
+                text-align: center;
+                font-weight: bold;
+                padding: 5%;
+                font-size: 1.4em;
+                line-height: 2.4em;
+            }
+        }
+
+        section.statistika {
+            .grafik1-veliki, .grafik2-veliki, .prva-poruka-veliki, .autor-prve-poruke-veliki, .grafik3-veliki, .grafik4-veliki, .statistika-slike-veliki {
+                display: none;
+            }
+            
+            .naslov-veliki {
+                display: none;
+            }
+            .naslov-mali {
+                text-align: center;
+                padding: 3%;
+                text-decoration: underline;
+                font-weight: 400;
+                font-size: 1.5em;
+            }
+            
+            .grafik1-mali {
+                margin: auto;
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: 400;
+                img {
+                    width: 85%;
+                }
+                p {
+                    padding: 3%;
+                }
+
+            }
+            .grafik2-mali {
+                margin: auto;
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: 400;
+                img {
+                    width: 85%;
+                    margin-bottom: 0;
+                }
+                p {
+                    margin-top: 0px;
+                    padding: 6%;
+                }
+
+            }
+            .prva-poruka-mali {
+                font-weight: bold;
+                font-size: 1.2em;
+                margin-left: 5.5%;
+               
+                .poruka {
+                    background-color: $color1;
+                    width: 97%;
+                    padding: 2%;
+                    margin-left: -3.5%;
+                    margin-top: 1.7%;
+                    font-size: 1.3em;
+                    color:#ececec;
+                    border-radius: 0.5em;
+                }
+            }
+            .autor-prve-poruke-mali {
+                padding: 0 2.5%;
+                
+            }
+            .grafik3-mali {
+                img {
+                    display: block;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    
+                }
+                .tekst {
+                    text-align: center;
+                }
+            }
+            .grafik4-mali {
+                img {
+                    display: block;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            .statistika-slike-mali {
+                position: relative;
+                height: 450px;
+                img {
+                    filter: grayscale(100%);
+                }
+                .slika1 {
+                    position: absolute;
+                    width: 65%;
+                    top: 5%;
+                    left: -10%;
+                    border-radius: 50%;
+
+                }
+                .slika2 {
+                    position: absolute;
+                    width: 55%;
+                    top: 35%;
+                    left: 60%;
+                    border-radius: 50%;
+
+                }
+                .slika3 {
+                    position: absolute;
+                    width: 36%;
+                    top: 70%;
+                    left: 10%;
+                    border-radius: 50%;
+
+                }
+
+            }
+            
+            
+        }
+        section.vremenska {
+            .naslov-veliki, .deo1-veliki, .deo2-veliki, .deo3-veliki, .deo4-veliki, .deo5-veliki, .deo6-veliki, .vremenska-slike-veliki {
+                display: none;
+            }
+          
+            .naslov-mali {
+                text-align: center;
+                padding: 3%;
+                text-decoration: underline;
+                font-weight: 400;
+                font-size: 1.5em;
+            }
+            .deo1-mali, .deo2-mali, .deo4-mali, .deo6-mali {
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: 400;
+                img {
+                    display: block;
+                    border-radius: 50%;
+                    border: 2px solid black;
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                p {
+                    padding: 3%;
+                }
+
+            }
+            .deo3-mali {
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: 400;
+                .slike-deo3-wrapper {
+                    display: flex;
+                    justify-content: space-evenly;
+                    img {
+                        width: 37%;
+                        border-radius: 50%;
+                        border: 2px solid black;
+                    }
+                }
+            }
+            .deo5-mali {
+                text-align: center;
+                font-size: 1.3em;
+                font-weight: 400;
+                .slike-deo5-wrapper {
+                    display: flex;
+                    justify-content: space-evenly;
+                    img {
+                        width: 37%;
+                        border-radius: 50%;
+                        border: 2px solid black;
+                    }
+                }
+            }
+            .vremenska-slike-mali {
+                position: relative;
+                height: 450px;
+                img {
+                    filter: grayscale(100%);
+                }
+                .slika1 {
+                    position: absolute;
+                    width: 35%;
+                    top: 5%;
+                    left: -10%;
+                    border-radius: 50%;
+
+                }
+                .slika2 {
+                    position: absolute;
+                    width: 75%;
+                    top: 20%;
+                    left: 45%;
+                    border-radius: 50%;
+
+                }
+                .slika3 {
+                    position: absolute;
+                    width: 26%;
+                    top: 35%;
+                    left: 10%;
+                    border-radius: 50%;
+
+                }
+
+            }
+        }
+        .podnozje-mali {
+            text-align: center;
+            .informacija {
+                font-size: 0.7em;
+            }
+            .to-be-continued {
+                font-size: 2em;
+                color: $color1;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+}
